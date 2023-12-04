@@ -1,0 +1,48 @@
+{
+    "log_path": "./",
+
+    "scheduler": {
+        "num_threads": 4,
+        "max_retries": 5,
+        "timeout": 5,
+        "failed_urls_path": "./failed_urls.txt"
+    },
+
+    "proxy_api": {
+        "proxy_api_ip": "proxy_api_ip",
+        "SecretId": "SecretId",
+        "Signature": "Signature",
+        "proxy_num": 10,
+        "proxy_max_errors": 10,
+        "username": "username",
+        "password": "password"
+    },
+
+    "crawler_base": {
+        "default_save_path": "./results/crawler_base_out",
+        "failed_urls_path": "./failed_urls.txt"
+    },
+
+    "douban_top250":{
+        "max_movies": 250,
+        "one_page_movie_num": 25,
+        "save_path": "./results/top250",
+        "save_file_name": "top250"
+    },
+
+    "long_comment": {
+        "max_comment_page_num": 10,
+        "one_page_review_num": 20,
+        "top250_path": "./results/top250",
+        "top250_txt_name": "top250.txt",
+        "save_path": "./results/full_comment"
+    },
+
+    "short_comment": {
+        "max_comment_page_num": 6,
+        "one_page_review_num": 120,
+        "top250_path": "./results/top250",
+        "top250_txt_name": "top250.txt",
+        "save_path": "./results/short_comment"
+    }
+}
